@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Talleres</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="agenda.css" />
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>Agenda</h1>
+        <p>Registro de la Agenda</p>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Formulario -->
+            <div class="col-md-2 mb-5">
+                <div class="row">
+                    <form id="form" class="col-12 needs-validation" novalidate>
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" class="form-control" id="name" placeholder="juanito alcachofa" />
+                            <div class="valid-feedback">Correcto!</div>
+                            <div class="invalid-feedback">El campo nombre es obligatorio</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cel">Telefono</label>
+                            <input type="number" class="form-control" id="cel" placeholder="3121234567" />
+                            <div class="valid-feedback">Correcto</div>
+                            <div class="invalid-feedback">Introduzca una fecha valida</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="birthday">Fecha de naciemiento</label>
+                            <input type="date" class="form-control" id="birthday" />
+                            <div class="valid-feedback">Correcto</div>
+                            <div class="invalid-feedback">Introduzca una fecha valida</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">Correo electronico</label>
+                            <input type="email" class="form-control" id="correo" placeholder="example@hotmail.com" />
+                            <div class="valid-feedback">Correcto!</div>
+                            <div class="invalid-feedback">El campo nombre es obligatorio</div>
+                        </div>
+                        <button id="btnAdd" type="button" class="btn btn-primary">
+                            Crear
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <!-- Tabla -->
+            <div class="col-md-8">
+                <table id="agenda" class="table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Telefono</th>
+                            <th>fecha de naciemiento</th>
+                            <th>Correo electronico</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js" type="module"></script>
+</body>
+
+</html>
