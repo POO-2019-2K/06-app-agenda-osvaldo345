@@ -6,6 +6,11 @@ class Main {
         this._agenda = new Tabla(document.querySelector("#agenda"));
 
         document.querySelector("#btnAdd").addEventListener("click",() => {
+            let form = document.querySelector("#form");
+            form.classList.add("was-validated");
+
+            if (form.checkValidity() === true) {
+            
             let name = document.querySelector("#name").value;
             let cel =document.querySelector("#cel").value;
             let sBirthday = document.querySelector("#birthday").value;
@@ -22,6 +27,7 @@ class Main {
             let Contacto = new Contactos(name, cel, birthday, correo);
 
             this._agenda.addContacto(Contacto);
+            }
         });
     }
 
