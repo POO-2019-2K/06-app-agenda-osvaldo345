@@ -12,9 +12,9 @@ export default class Tabla {
         let cellCorreo = row.insertCell(4);
 
         cellName.innerHTML = Contacto.name;
-        cellCel.innerHTML = Contacto.Cel;
+        cellCel.innerHTML = Contacto.cel;
         cellBirthday.innerHTML = Contacto.getBirthdayAsString();
         cellAge.innerHTML = Contacto.getAge();
-        cellCorreo.innerHTML = Contacto.Correo;
+        cellCorreo.innerHTML = Contacto.correo;
     }
 }

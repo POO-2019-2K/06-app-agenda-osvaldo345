@@ -1,5 +1,5 @@
 export default class Contactos {
-    constructor(name, cel, birthday, correo) {
+    constructor(name, cel, birthday, correo,) {
         this._name =  name.toUpperCase();
         this._cel = cel;
         this._birthday = birthday;

@@ -12,14 +12,14 @@ class Main {
             if (form.checkValidity() === true) {
             
             let name = document.querySelector("#name").value;
-            let cel =document.querySelector("#cel").value;
+            let cel = document.querySelector("#cel").value;
             let sBirthday = document.querySelector("#birthday").value;
             sBirthday = sBirthday.split('-');
 
         
             let birthday = new Date(sBirthday[0], sBirthday[1], sBirthday[2]);
 
-            let correo =document.querySelector("#correo").value;
+            let correo = document.querySelector("#correo").value;
 
 
 
