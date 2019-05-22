@@ -1,9 +1,9 @@
 export default class Contactos {
-    constructor(name, cel, birthday, correo,) {
-        this._name =  name.toUpperCase();
-        this._cel = cel;
-        this._birthday = birthday;
-        this._correo = correo;
+    constructor(Contacto) {
+        this._name =  Contacto.name.toUpperCase();
+        this._cel = Contacto.cel;
+        this._birthday = Contacto.birthday;
+        this._correo = Contacto.correo;
 
     }
 

@@ -21,12 +21,17 @@ class Main {
 
             let correo = document.querySelector("#correo").value;
 
+            let objContacto = {
+                name: name,
+                cel: cel,
+                birthday: birthday,
+                correo: correo,
+            }
 
 
+            let Contacto = new Contactos(objContacto);
 
-            let Contacto = new Contactos(name, cel, birthday, correo);
-
-            this._agenda.addContacto(Contacto);
+            this._agenda._addContacto(Contacto);
             }
         });
     }
