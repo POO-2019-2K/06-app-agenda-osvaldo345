@@ -15,6 +15,7 @@ export default class Tabla {
         }
         taller2.forEach( (Contacto, index) => {
         console.log(Contacto);
+        Contacto.birthday = new Date(Contacto.birthday);
         this._addContacto(new Contactos(Contacto));
         });
     }

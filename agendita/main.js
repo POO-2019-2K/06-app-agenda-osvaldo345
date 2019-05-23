@@ -31,7 +31,7 @@ class Main {
 
             let Contacto = new Contactos(objContacto);
 
-            this._agenda._addContacto(Contacto);
+            this._agenda.addEmployee2(Contacto);
             }
         });
     }
