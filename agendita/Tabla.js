@@ -19,6 +19,20 @@ export default class Tabla {
         this._addContacto(new Contactos(Contacto));
         });
     }
+
+    _addEditDeleteToRow(row, Contacto) {
+        let btnDelete = document.createElement("input");
+        btnDelete.type = "button";
+        btnDelete.value = 'Eliminar';
+        btnDelete.className = 'btn btn-danger';
+    
+        row.cells[5].innerHTML = '';
+        row.cells[5].appendChild(btnDelete);
+        btnDelete.addEventListener('click', () => {
+            this._editRow(row, Contacto);
+        });
+    }
+    
     _addContacto(Contacto) {
         let row = this._tableAgenda.insertRow(-1);
         let cellName = row.insertCell(0);
@@ -26,12 +40,15 @@ export default class Tabla {
         let cellBirthday = row.insertCell(2);
         let cellAge = row.insertCell(3);
         let cellCorreo = row.insertCell(4);
+        row.insertCell(5);
+
 
         cellName.innerHTML = Contacto.name;
         cellCel.innerHTML = Contacto.cel;
         cellBirthday.innerHTML = Contacto.getBirthdayAsString();
         cellAge.innerHTML = Contacto.getAge();
         cellCorreo.innerHTML = Contacto.correo;
+        this._addEditDeleteToRow(row, Contacto);
 
         let objContacto = {
             name: Contacto.name,
