@@ -4,7 +4,6 @@ export default class Contactos {
         this._cel = Contacto.cel;
         this._birthday = Contacto.birthday;
         this._correo = Contacto.correo;
-
     }
 
     get name(){

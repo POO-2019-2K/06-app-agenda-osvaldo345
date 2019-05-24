@@ -29,7 +29,10 @@ export default class Tabla {
         row.cells[5].innerHTML = '';
         row.cells[5].appendChild(btnDelete);
         btnDelete.addEventListener('click', () => {
-            this._editRow(row, Contacto);
+            this._taller2.splice(Contacto, 1);
+            row.innerHTML = "";
+            localStorage.setItem("taller2", JSON.stringify(this._taller2));
+            return;
         });
     }
     

@@ -1,5 +1,4 @@
-# Ejercicio 6 La Agenda [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7e84c0c773bf4f27945dfa274b76cf21)](https://www.codacy.com/app/osvaldo345/06-app-agenda-osvaldo345?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=POO-2019-2K/06-app-agenda-osvaldo345&amp;utm_campaign=Badge_Grade)   
-[![codebeat badge](https://codebeat.co/badges/a8c48b5f-f4ed-4709-a643-4f1d1d0a0a01)](https://codebeat.co/projects/github-com-poo-2019-2k-06-app-agenda-osvaldo345-master)
+# Ejercicio 6 La Agenda [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7e84c0c773bf4f27945dfa274b76cf21)](https://www.codacy.com/app/osvaldo345/06-app-agenda-osvaldo345?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=POO-2019-2K/06-app-agenda-osvaldo345&amp;utm_campaign=Badge_Grade)   [![codebeat badge](https://codebeat.co/badges/a8c48b5f-f4ed-4709-a643-4f1d1d0a0a01)](https://codebeat.co/projects/github-com-poo-2019-2k-06-app-agenda-osvaldo345-master)
 
 ## Tiempo para realizar la actividad
 
