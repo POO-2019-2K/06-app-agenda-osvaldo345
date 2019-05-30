@@ -91,4 +91,24 @@ addEmployee2(Contacto) {
     console.log(localStorage.getItem("taller2"));
 }
 
+sortByName() {
+    this._taller2.select(function (a, b) {
+        if (a.name > b.name) {
+            return 1;
+        } else {
+            return -1;
+        }
+    });
+    this._taller2.sortByName();
+    localStorage.setItem("taller2", JSON.stringify(this._taller2));
+}
+
+sortByAge() {
+    this._taller2.select(function (a, b) {
+        return (a.age - b.age);
+    });
+    this._taller2.sortByAge();
+    localStorage.setItem("taller2", JSON.stringify(this._taller2));
+}
+
 }

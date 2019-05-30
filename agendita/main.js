@@ -34,9 +34,16 @@ class Main {
             this._agenda.addEmployee2(Contacto);
             }
         });
+
+        document.querySelector("#select").addEventListener("change", () => {
+            if(document.querySelector("#select").value === "value1"){
+                this._agenda.sortByName();
+            }else{
+                this._agenda.sortByAge();
+            }
+        });
+    }
     }
 
-
-}
 
 new Main(); 
